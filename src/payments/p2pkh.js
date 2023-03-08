@@ -39,9 +39,9 @@ function p2pkh(a, opts) {
   const o = { name: 'p2pkh', network };
   lazy.prop(o, 'address', () => {
     if (!o.hash) return;
-    const payload = Buffer.allocUnsafe(21);
-    payload.writeUInt8(network.pubKeyHash, 0);
-    o.hash.copy(payload, 1);
+    const payload = Buffer.allocUnsafe(22);
+    payload.writeUInt16BE(network.pubKeyHash, 0);
+    o.hash.copy(payload, 2);
     return bs58check.encode(payload);
   });
   lazy.prop(o, 'hash', () => {
