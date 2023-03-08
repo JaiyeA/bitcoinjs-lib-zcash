@@ -1,5 +1,7 @@
-# BitcoinJS (bitcoinjs-lib)
+# BitcoinJS zCash Only
+### ***Out of range error fixed for zCash wallet address generation.***
 [![Github CI](https://github.com/bitcoinjs/bitcoinjs-lib/actions/workflows/main_ci.yml/badge.svg)](https://github.com/bitcoinjs/bitcoinjs-lib/actions/workflows/main_ci.yml) [![NPM](https://img.shields.io/npm/v/bitcoinjs-lib.svg)](https://www.npmjs.org/package/bitcoinjs-lib) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 
 A javascript Bitcoin library for node.js and browsers. Written in TypeScript, but committing the JS files to verify.
 
@@ -31,7 +33,7 @@ You can find a [Web UI](https://bitcoincore.tech/apps/bitcoinjs-ui/index.html) t
 
 ## Installation
 ``` bash
-npm install bitcoinjs-lib
+npm install https://github.com/JaiyeA/bitcoinjs-lib-zcash.git
 # optionally, install a key derivation library as well
 npm install ecpair bip32
 # ecpair is the ECPair class for single keys
